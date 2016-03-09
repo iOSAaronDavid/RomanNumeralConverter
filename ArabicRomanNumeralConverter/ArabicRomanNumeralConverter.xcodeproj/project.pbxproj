@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEEC8A3F1C90A7CC0096DB34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEC8A3E1C90A7CC0096DB34 /* main.m */; };
+		CEEC8A421C90A7CC0096DB34 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEC8A411C90A7CC0096DB34 /* AppDelegate.m */; };
+		CEEC8A451C90A7CC0096DB34 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEC8A441C90A7CC0096DB34 /* ViewController.m */; };
+		CEEC8A481C90A7CC0096DB34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEC8A461C90A7CC0096DB34 /* Main.storyboard */; };
+		CEEC8A4A1C90A7CC0096DB34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEC8A491C90A7CC0096DB34 /* Assets.xcassets */; };
+		CEEC8A4D1C90A7CC0096DB34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEC8A4B1C90A7CC0096DB34 /* LaunchScreen.storyboard */; };
+		CEEC8A581C90A7CC0096DB34 /* ArabicRomanNumeralConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEC8A571C90A7CC0096DB34 /* ArabicRomanNumeralConverterTests.m */; };
+		CEEC8A631C90A7CC0096DB34 /* ArabicRomanNumeralConverterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEC8A621C90A7CC0096DB34 /* ArabicRomanNumeralConverterUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEEC8A541C90A7CC0096DB34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEEC8A321C90A7CC0096DB34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEEC8A391C90A7CC0096DB34;
+			remoteInfo = ArabicRomanNumeralConverter;
+		};
+		CEEC8A5F1C90A7CC0096DB34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEEC8A321C90A7CC0096DB34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEEC8A391C90A7CC0096DB34;
+			remoteInfo = ArabicRomanNumeralConverter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CEEC8A3A1C90A7CC0096DB34 /* ArabicRomanNumeralConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArabicRomanNumeralConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEC8A3E1C90A7CC0096DB34 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CEEC8A401C90A7CC0096DB34 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CEEC8A411C90A7CC0096DB34 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CEEC8A431C90A7CC0096DB34 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CEEC8A441C90A7CC0096DB34 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CEEC8A471C90A7CC0096DB34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEEC8A491C90A7CC0096DB34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEEC8A4C1C90A7CC0096DB34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEEC8A4E1C90A7CC0096DB34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEEC8A531C90A7CC0096DB34 /* ArabicRomanNumeralConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArabicRomanNumeralConverterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEC8A571C90A7CC0096DB34 /* ArabicRomanNumeralConverterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArabicRomanNumeralConverterTests.m; sourceTree = "<group>"; };
+		CEEC8A591C90A7CC0096DB34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEEC8A5E1C90A7CC0096DB34 /* ArabicRomanNumeralConverterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArabicRomanNumeralConverterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEC8A621C90A7CC0096DB34 /* ArabicRomanNumeralConverterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArabicRomanNumeralConverterUITests.m; sourceTree = "<group>"; };
+		CEEC8A641C90A7CC0096DB34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEEC8A371C90A7CC0096DB34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEC8A501C90A7CC0096DB34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEC8A5B1C90A7CC0096DB34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEEC8A311C90A7CC0096DB34 = {
+			isa = PBXGroup;
+			children = (
+				CEEC8A3C1C90A7CC0096DB34 /* ArabicRomanNumeralConverter */,
+				CEEC8A561C90A7CC0096DB34 /* ArabicRomanNumeralConverterTests */,
+				CEEC8A611C90A7CC0096DB34 /* ArabicRomanNumeralConverterUITests */,
+				CEEC8A3B1C90A7CC0096DB34 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEEC8A3B1C90A7CC0096DB34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEEC8A3A1C90A7CC0096DB34 /* ArabicRomanNumeralConverter.app */,
+				CEEC8A531C90A7CC0096DB34 /* ArabicRomanNumeralConverterTests.xctest */,
+				CEEC8A5E1C90A7CC0096DB34 /* ArabicRomanNumeralConverterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEEC8A3C1C90A7CC0096DB34 /* ArabicRomanNumeralConverter */ = {
+			isa = PBXGroup;
+			children = (
+				CEEC8A401C90A7CC0096DB34 /* AppDelegate.h */,
+				CEEC8A411C90A7CC0096DB34 /* AppDelegate.m */,
+				CEEC8A431C90A7CC0096DB34 /* ViewController.h */,
+				CEEC8A441C90A7CC0096DB34 /* ViewController.m */,
+				CEEC8A461C90A7CC0096DB34 /* Main.storyboard */,
+				CEEC8A491C90A7CC0096DB34 /* Assets.xcassets */,
+				CEEC8A4B1C90A7CC0096DB34 /* LaunchScreen.storyboard */,
+				CEEC8A4E1C90A7CC0096DB34 /* Info.plist */,
+				CEEC8A3D1C90A7CC0096DB34 /* Supporting Files */,
+			);
+			path = ArabicRomanNumeralConverter;
+			sourceTree = "<group>";
+		};
+		CEEC8A3D1C90A7CC0096DB34 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEEC8A3E1C90A7CC0096DB34 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEEC8A561C90A7CC0096DB34 /* ArabicRomanNumeralConverterTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEEC8A571C90A7CC0096DB34 /* ArabicRomanNumeralConverterTests.m */,
+				CEEC8A591C90A7CC0096DB34 /* Info.plist */,
+			);
+			path = ArabicRomanNumeralConverterTests;
+			sourceTree = "<group>";
+		};
+		CEEC8A611C90A7CC0096DB34 /* ArabicRomanNumeralConverterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CEEC8A621C90A7CC0096DB34 /* ArabicRomanNumeralConverterUITests.m */,
+				CEEC8A641C90A7CC0096DB34 /* Info.plist */,
+			);
+			path = ArabicRomanNumeralConverterUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEEC8A391C90A7CC0096DB34 /* ArabicRomanNumeralConverter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEEC8A671C90A7CC0096DB34 /* Build configuration list for PBXNativeTarget "ArabicRomanNumeralConverter" */;
+			buildPhases = (
+				CEEC8A361C90A7CC0096DB34 /* Sources */,
+				CEEC8A371C90A7CC0096DB34 /* Frameworks */,
+				CEEC8A381C90A7CC0096DB34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArabicRomanNumeralConverter;
+			productName = ArabicRomanNumeralConverter;
+			productReference = CEEC8A3A1C90A7CC0096DB34 /* ArabicRomanNumeralConverter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEEC8A521C90A7CC0096DB34 /* ArabicRomanNumeralConverterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEEC8A6A1C90A7CC0096DB34 /* Build configuration list for PBXNativeTarget "ArabicRomanNumeralConverterTests" */;
+			buildPhases = (
+				CEEC8A4F1C90A7CC0096DB34 /* Sources */,
+				CEEC8A501C90A7CC0096DB34 /* Frameworks */,
+				CEEC8A511C90A7CC0096DB34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEEC8A551C90A7CC0096DB34 /* PBXTargetDependency */,
+			);
+			name = ArabicRomanNumeralConverterTests;
+			productName = ArabicRomanNumeralConverterTests;
+			productReference = CEEC8A531C90A7CC0096DB34 /* ArabicRomanNumeralConverterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CEEC8A5D1C90A7CC0096DB34 /* ArabicRomanNumeralConverterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEEC8A6D1C90A7CC0096DB34 /* Build configuration list for PBXNativeTarget "ArabicRomanNumeralConverterUITests" */;
+			buildPhases = (
+				CEEC8A5A1C90A7CC0096DB34 /* Sources */,
+				CEEC8A5B1C90A7CC0096DB34 /* Frameworks */,
+				CEEC8A5C1C90A7CC0096DB34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEEC8A601C90A7CC0096DB34 /* PBXTargetDependency */,
+			);
+			name = ArabicRomanNumeralConverterUITests;
+			productName = ArabicRomanNumeralConverterUITests;
+			productReference = CEEC8A5E1C90A7CC0096DB34 /* ArabicRomanNumeralConverterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEEC8A321C90A7CC0096DB34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = tgm;
+				TargetAttributes = {
+					CEEC8A391C90A7CC0096DB34 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					CEEC8A521C90A7CC0096DB34 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = CEEC8A391C90A7CC0096DB34;
+					};
+					CEEC8A5D1C90A7CC0096DB34 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = CEEC8A391C90A7CC0096DB34;
+					};
+				};
+			};
+			buildConfigurationList = CEEC8A351C90A7CC0096DB34 /* Build configuration list for PBXProject "ArabicRomanNumeralConverter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEEC8A311C90A7CC0096DB34;
+			productRefGroup = CEEC8A3B1C90A7CC0096DB34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEEC8A391C90A7CC0096DB34 /* ArabicRomanNumeralConverter */,
+				CEEC8A521C90A7CC0096DB34 /* ArabicRomanNumeralConverterTests */,
+				CEEC8A5D1C90A7CC0096DB34 /* ArabicRomanNumeralConverterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEEC8A381C90A7CC0096DB34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEC8A4D1C90A7CC0096DB34 /* LaunchScreen.storyboard in Resources */,
+				CEEC8A4A1C90A7CC0096DB34 /* Assets.xcassets in Resources */,
+				CEEC8A481C90A7CC0096DB34 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEC8A511C90A7CC0096DB34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEC8A5C1C90A7CC0096DB34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEEC8A361C90A7CC0096DB34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEC8A451C90A7CC0096DB34 /* ViewController.m in Sources */,
+				CEEC8A421C90A7CC0096DB34 /* AppDelegate.m in Sources */,
+				CEEC8A3F1C90A7CC0096DB34 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEC8A4F1C90A7CC0096DB34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEC8A581C90A7CC0096DB34 /* ArabicRomanNumeralConverterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEC8A5A1C90A7CC0096DB34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEC8A631C90A7CC0096DB34 /* ArabicRomanNumeralConverterUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEEC8A551C90A7CC0096DB34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEEC8A391C90A7CC0096DB34 /* ArabicRomanNumeralConverter */;
+			targetProxy = CEEC8A541C90A7CC0096DB34 /* PBXContainerItemProxy */;
+		};
+		CEEC8A601C90A7CC0096DB34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEEC8A391C90A7CC0096DB34 /* ArabicRomanNumeralConverter */;
+			targetProxy = CEEC8A5F1C90A7CC0096DB34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEEC8A461C90A7CC0096DB34 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEEC8A471C90A7CC0096DB34 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEEC8A4B1C90A7CC0096DB34 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEEC8A4C1C90A7CC0096DB34 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEEC8A651C90A7CC0096DB34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CEEC8A661C90A7CC0096DB34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEEC8A681C90A7CC0096DB34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ArabicRomanNumeralConverter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tgm.ArabicRomanNumeralConverter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CEEC8A691C90A7CC0096DB34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ArabicRomanNumeralConverter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tgm.ArabicRomanNumeralConverter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CEEC8A6B1C90A7CC0096DB34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ArabicRomanNumeralConverterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tgm.ArabicRomanNumeralConverterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArabicRomanNumeralConverter.app/ArabicRomanNumeralConverter";
+			};
+			name = Debug;
+		};
+		CEEC8A6C1C90A7CC0096DB34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ArabicRomanNumeralConverterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tgm.ArabicRomanNumeralConverterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArabicRomanNumeralConverter.app/ArabicRomanNumeralConverter";
+			};
+			name = Release;
+		};
+		CEEC8A6E1C90A7CC0096DB34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ArabicRomanNumeralConverterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tgm.ArabicRomanNumeralConverterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ArabicRomanNumeralConverter;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		CEEC8A6F1C90A7CC0096DB34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ArabicRomanNumeralConverterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tgm.ArabicRomanNumeralConverterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ArabicRomanNumeralConverter;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEEC8A351C90A7CC0096DB34 /* Build configuration list for PBXProject "ArabicRomanNumeralConverter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEC8A651C90A7CC0096DB34 /* Debug */,
+				CEEC8A661C90A7CC0096DB34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEEC8A671C90A7CC0096DB34 /* Build configuration list for PBXNativeTarget "ArabicRomanNumeralConverter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEC8A681C90A7CC0096DB34 /* Debug */,
+				CEEC8A691C90A7CC0096DB34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CEEC8A6A1C90A7CC0096DB34 /* Build configuration list for PBXNativeTarget "ArabicRomanNumeralConverterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEC8A6B1C90A7CC0096DB34 /* Debug */,
+				CEEC8A6C1C90A7CC0096DB34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CEEC8A6D1C90A7CC0096DB34 /* Build configuration list for PBXNativeTarget "ArabicRomanNumeralConverterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEC8A6E1C90A7CC0096DB34 /* Debug */,
+				CEEC8A6F1C90A7CC0096DB34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEEC8A321C90A7CC0096DB34 /* Project object */;
+}
