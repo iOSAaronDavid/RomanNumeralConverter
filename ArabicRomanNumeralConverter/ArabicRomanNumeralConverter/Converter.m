@@ -147,9 +147,22 @@
 
 -(NSString *)convertArabicToRomanNumeral:(int)arabic
 {
+    NSMutableString *romanNumeral = [[NSMutableString alloc] init];
+    
+    int MCount = 0;
+    
+    if (arabic >= 1000)
+    {
+        MCount = arabic / 1000;
+    }
     
     
-    return @"";
+    for (int i = 0; i < MCount; i++)
+    {
+        [romanNumeral appendString:@"M"];
+    }
+    
+    return romanNumeral;
 }
 
 @end
