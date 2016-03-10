@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Converter.h"
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UILabel *romanNumeralLabel;
+
+@property (strong, nonatomic) IBOutlet UILabel *arabicLabel;
+@property (strong, nonatomic) IBOutlet UITextField *symbolTextField;
+@property (strong, nonatomic) IBOutlet UIButton *convertButton;
 
 @end
 

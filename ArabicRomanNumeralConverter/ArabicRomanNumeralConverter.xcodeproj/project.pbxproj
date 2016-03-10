@@ -15,6 +15,9 @@
 		CEEC8A4D1C90A7CC0096DB34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEC8A4B1C90A7CC0096DB34 /* LaunchScreen.storyboard */; };
 		CEEC8A581C90A7CC0096DB34 /* ArabicRomanNumeralConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEC8A571C90A7CC0096DB34 /* ArabicRomanNumeralConverterTests.m */; };
 		CEEC8A631C90A7CC0096DB34 /* ArabicRomanNumeralConverterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEC8A621C90A7CC0096DB34 /* ArabicRomanNumeralConverterUITests.m */; };
+		CEEC8A721C90F6550096DB34 /* Converter.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEC8A711C90F6550096DB34 /* Converter.m */; };
+		CEEC8A731C90F6550096DB34 /* Converter.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEC8A711C90F6550096DB34 /* Converter.m */; };
+		CEEC8A741C90F6550096DB34 /* Converter.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEC8A711C90F6550096DB34 /* Converter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,8 @@
 		CEEC8A5E1C90A7CC0096DB34 /* ArabicRomanNumeralConverterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArabicRomanNumeralConverterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEC8A621C90A7CC0096DB34 /* ArabicRomanNumeralConverterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArabicRomanNumeralConverterUITests.m; sourceTree = "<group>"; };
 		CEEC8A641C90A7CC0096DB34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEEC8A701C90F6550096DB34 /* Converter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Converter.h; sourceTree = "<group>"; };
+		CEEC8A711C90F6550096DB34 /* Converter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Converter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +115,8 @@
 				CEEC8A4B1C90A7CC0096DB34 /* LaunchScreen.storyboard */,
 				CEEC8A4E1C90A7CC0096DB34 /* Info.plist */,
 				CEEC8A3D1C90A7CC0096DB34 /* Supporting Files */,
+				CEEC8A701C90F6550096DB34 /* Converter.h */,
+				CEEC8A711C90F6550096DB34 /* Converter.m */,
 			);
 			path = ArabicRomanNumeralConverter;
 			sourceTree = "<group>";
@@ -272,6 +279,7 @@
 			files = (
 				CEEC8A451C90A7CC0096DB34 /* ViewController.m in Sources */,
 				CEEC8A421C90A7CC0096DB34 /* AppDelegate.m in Sources */,
+				CEEC8A721C90F6550096DB34 /* Converter.m in Sources */,
 				CEEC8A3F1C90A7CC0096DB34 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEEC8A731C90F6550096DB34 /* Converter.m in Sources */,
 				CEEC8A581C90A7CC0096DB34 /* ArabicRomanNumeralConverterTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEEC8A741C90F6550096DB34 /* Converter.m in Sources */,
 				CEEC8A631C90A7CC0096DB34 /* ArabicRomanNumeralConverterUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,6 +506,7 @@
 				CEEC8A691C90A7CC0096DB34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEEC8A6A1C90A7CC0096DB34 /* Build configuration list for PBXNativeTarget "ArabicRomanNumeralConverterTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +515,7 @@
 				CEEC8A6C1C90A7CC0096DB34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEEC8A6D1C90A7CC0096DB34 /* Build configuration list for PBXNativeTarget "ArabicRomanNumeralConverterUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +524,7 @@
 				CEEC8A6F1C90A7CC0096DB34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

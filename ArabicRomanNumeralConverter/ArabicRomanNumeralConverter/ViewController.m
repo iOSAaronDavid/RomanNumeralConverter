@@ -17,11 +17,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)convert:(id)sender
+{
+    
+}
+
+-(double)convertRomanNumeralToArabic
+{
+    Converter *converter = [[Converter alloc] init];
+    
+    return 0;
 }
 
 @end

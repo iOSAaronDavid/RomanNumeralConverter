@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "Converter.h"
 
 @interface ArabicRomanNumeralConverterTests : XCTestCase
 
@@ -27,7 +28,16 @@
 - (void)testExample {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    Converter *converter = [[Converter alloc] init];
+    
+    XCTAssertEqual(5 , [converter convertRomanNumeralToArabic:@"V"]);
+    
+    
 }
+
+
+
 
 - (void)testPerformanceExample {
     // This is an example of a performance test case.
