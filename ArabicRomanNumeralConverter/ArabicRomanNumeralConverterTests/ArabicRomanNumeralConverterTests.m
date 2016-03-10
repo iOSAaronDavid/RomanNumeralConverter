@@ -43,13 +43,14 @@
     XCTAssertEqual(10, [converter convertRomanNumeralToArabic:@"X"]);
     XCTAssertEqual(50, [converter convertRomanNumeralToArabic:@"L"]);
     XCTAssertEqual(100, [converter convertRomanNumeralToArabic:@"C"]);
+    XCTAssertEqual(90, [converter convertRomanNumeralToArabic:@"XC"]);
     
-    XCTAssertEqual(34, [converter convertRomanNumeralToArabic:@"XXXIV"]);
+    
     XCTAssertEqual(44, [converter convertRomanNumeralToArabic:@"XLIV"]);
     
     // 'L' meaning '50', 'C' meaning '100', 'D' meaning '500', and 'M' meaning '1000'
     
-    
+    // 'XC', 'CD' and 'CM'
 }
 
 -(void)testConvertArabicToRomanNumeral:(Converter *)converter

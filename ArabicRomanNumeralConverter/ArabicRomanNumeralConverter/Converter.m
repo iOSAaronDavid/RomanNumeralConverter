@@ -64,6 +64,12 @@
                     XCount--;
                     LCount--;
                 }
+                else if ([[romanNumeral substringWithRange:range] isEqualToString:@"XC"])
+                {
+                    valueToAdd += 90;
+                    XCount--;
+                    CCount--;
+                }
             }
         }
         
