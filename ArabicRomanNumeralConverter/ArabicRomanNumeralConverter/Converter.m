@@ -16,6 +16,10 @@
     {
         return 5;
     }
+    else if ([romanNumeral isEqualToString:@"X"])
+    {
+        return 10;
+    }
     return 0;
 }
 
