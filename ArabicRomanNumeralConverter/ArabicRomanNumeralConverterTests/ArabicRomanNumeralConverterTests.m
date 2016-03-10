@@ -48,6 +48,10 @@
     
     XCTAssertEqual(90, [converter convertRomanNumeralToArabic:@"XC"]);
     XCTAssertEqual(44, [converter convertRomanNumeralToArabic:@"XLIV"]);
+    XCTAssertEqual(490, [converter convertRomanNumeralToArabic:@"CDXC"]);
+    XCTAssertEqual(946, [converter convertRomanNumeralToArabic:@"CMXLVI"]);
+    XCTAssertEqual(1234, [converter convertRomanNumeralToArabic:@"MCCXXXIV"]);
+    XCTAssertEqual(1526, [converter convertRomanNumeralToArabic:@"MDXXVI"]);
     
     // 'L' meaning '50', 'C' meaning '100', 'D' meaning '500', and 'M' meaning '1000'
     

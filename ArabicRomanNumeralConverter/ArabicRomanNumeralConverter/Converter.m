@@ -76,6 +76,18 @@
                     XCount--;
                     CCount--;
                 }
+                else if ([[romanNumeral substringWithRange:range] isEqualToString:@"CD"])
+                {
+                    valueToAdd += 400;
+                    DCount--;
+                    CCount--;
+                }
+                else if ([[romanNumeral substringWithRange:range] isEqualToString:@"CM"])
+                {
+                    valueToAdd += 900;
+                    MCount--;
+                    CCount--;
+                }
             }
         }
         
