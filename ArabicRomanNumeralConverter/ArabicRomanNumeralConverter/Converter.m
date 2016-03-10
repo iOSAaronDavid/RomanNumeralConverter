@@ -23,6 +23,8 @@
         int XCount = 0;
         int LCount = 0;
         int CCount = 0;
+        int DCount = 0;
+        int MCount = 0;
         int valueToAdd = 0;
         
         for (int i = 0; i < romanNumeral.length; i++)
@@ -41,6 +43,10 @@
                 LCount++;
             else if ([[romanNumeral substringWithRange:range] isEqualToString:@"C"])
                 CCount++;
+            else if ([[romanNumeral substringWithRange:range] isEqualToString:@"D"])
+                DCount++;
+            else if ([[romanNumeral substringWithRange:range] isEqualToString:@"M"])
+                MCount++;
             
             if (romanNumeral.length > 1 && i < romanNumeral.length - 1)
             {
@@ -85,6 +91,10 @@
             arabicValue += LCount * 50;
         if (CCount > 0)
             arabicValue += CCount * 100;
+        if (DCount > 0)
+            arabicValue += DCount * 500;
+        if (MCount > 0)
+            arabicValue += MCount * 1000;
         
         arabicValue +=  valueToAdd;
         return arabicValue;
