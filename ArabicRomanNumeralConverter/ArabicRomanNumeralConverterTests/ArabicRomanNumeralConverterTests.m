@@ -30,11 +30,20 @@
     // Use XCTAssert and related functions to verify your tests produce the correct results.
     
     Converter *converter = [[Converter alloc] init];
-    
+    [self testConvertRomanNumeraltoArabic:converter];
+    [self testConvertArabicToRomanNumeral:converter];
+}
+
+-(void)testConvertRomanNumeraltoArabic:(Converter *)converter
+{
     XCTAssertEqual(1, [converter convertRomanNumeralToArabic:@"I"]);
     XCTAssertEqual(5 , [converter convertRomanNumeralToArabic:@"V"]);
     XCTAssertEqual(10, [converter convertRomanNumeralToArabic:@"X"]);
     XCTAssertEqual(50, [converter convertRomanNumeralToArabic:@"L"]);
+}
+
+-(void)testConvertArabicToRomanNumeral:(Converter *)converter
+{
     
 }
 
