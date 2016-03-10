@@ -18,6 +18,9 @@
 		CEEC8A721C90F6550096DB34 /* Converter.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEC8A711C90F6550096DB34 /* Converter.m */; };
 		CEEC8A731C90F6550096DB34 /* Converter.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEC8A711C90F6550096DB34 /* Converter.m */; };
 		CEEC8A741C90F6550096DB34 /* Converter.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEC8A711C90F6550096DB34 /* Converter.m */; };
+		CEEC8A771C91244A0096DB34 /* Numeral.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEC8A761C91244A0096DB34 /* Numeral.m */; };
+		CEEC8A781C91244A0096DB34 /* Numeral.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEC8A761C91244A0096DB34 /* Numeral.m */; };
+		CEEC8A791C91244A0096DB34 /* Numeral.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEC8A761C91244A0096DB34 /* Numeral.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,8 @@
 		CEEC8A641C90A7CC0096DB34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEEC8A701C90F6550096DB34 /* Converter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Converter.h; sourceTree = "<group>"; };
 		CEEC8A711C90F6550096DB34 /* Converter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Converter.m; sourceTree = "<group>"; };
+		CEEC8A751C91244A0096DB34 /* Numeral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Numeral.h; sourceTree = "<group>"; };
+		CEEC8A761C91244A0096DB34 /* Numeral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Numeral.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +122,8 @@
 				CEEC8A3D1C90A7CC0096DB34 /* Supporting Files */,
 				CEEC8A701C90F6550096DB34 /* Converter.h */,
 				CEEC8A711C90F6550096DB34 /* Converter.m */,
+				CEEC8A751C91244A0096DB34 /* Numeral.h */,
+				CEEC8A761C91244A0096DB34 /* Numeral.m */,
 			);
 			path = ArabicRomanNumeralConverter;
 			sourceTree = "<group>";
@@ -281,6 +288,7 @@
 				CEEC8A421C90A7CC0096DB34 /* AppDelegate.m in Sources */,
 				CEEC8A721C90F6550096DB34 /* Converter.m in Sources */,
 				CEEC8A3F1C90A7CC0096DB34 /* main.m in Sources */,
+				CEEC8A771C91244A0096DB34 /* Numeral.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEEC8A731C90F6550096DB34 /* Converter.m in Sources */,
+				CEEC8A781C91244A0096DB34 /* Numeral.m in Sources */,
 				CEEC8A581C90A7CC0096DB34 /* ArabicRomanNumeralConverterTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEEC8A741C90F6550096DB34 /* Converter.m in Sources */,
+				CEEC8A791C91244A0096DB34 /* Numeral.m in Sources */,
 				CEEC8A631C90A7CC0096DB34 /* ArabicRomanNumeralConverterUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
