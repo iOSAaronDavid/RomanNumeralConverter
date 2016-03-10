@@ -31,9 +31,10 @@
     
     Converter *converter = [[Converter alloc] init];
     
+    XCTAssertEqual(1, [converter convertRomanNumeralToArabic:@"I"]);
     XCTAssertEqual(5 , [converter convertRomanNumeralToArabic:@"V"]);
     XCTAssertEqual(10, [converter convertRomanNumeralToArabic:@"X"]);
-    
+    XCTAssertEqual(50, [converter convertRomanNumeralToArabic:@"L"]);
     
 }
 

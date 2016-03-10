@@ -12,13 +12,21 @@
 
 -(double)convertRomanNumeralToArabic:(NSString *)romanNumeral
 {
-    if ([romanNumeral isEqualToString:@"V"])
+    if ([romanNumeral isEqualToString:@"I"])
+    {
+        return 1;
+    }
+    else if ([romanNumeral isEqualToString:@"V"])
     {
         return 5;
     }
     else if ([romanNumeral isEqualToString:@"X"])
     {
         return 10;
+    }
+    else if ([romanNumeral isEqualToString:@"L"])
+    {
+        return 50;
     }
     return 0;
 }
