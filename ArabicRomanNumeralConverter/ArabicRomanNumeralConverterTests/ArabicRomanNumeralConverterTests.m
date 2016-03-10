@@ -60,6 +60,7 @@
 
 -(void)testConvertArabicToRomanNumeral:(Converter *)converter
 {
+    XCTAssertEqual(@"", [converter convertArabicToRomanNumeral:0]);
     
 }
 

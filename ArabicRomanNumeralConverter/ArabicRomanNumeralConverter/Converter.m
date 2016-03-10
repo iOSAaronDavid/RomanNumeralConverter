@@ -10,7 +10,7 @@
 
 @implementation Converter
 
--(double)convertRomanNumeralToArabic:(NSString *)romanNumeral
+-(int)convertRomanNumeralToArabic:(NSString *)romanNumeral
 {
     int highestNumeralWorth = [self findHighNumeralWorth:romanNumeral];
     
@@ -30,8 +30,6 @@
         for (int i = 0; i < romanNumeral.length; i++)
         {
             NSRange range = NSMakeRange(i, 1);
-            
-            NSString *test = [romanNumeral substringWithRange:range];
             
             if ([[romanNumeral substringWithRange:range] isEqualToString:@"I"])
                 ICount++;
@@ -91,7 +89,7 @@
             }
         }
         
-        double arabicValue = 0;
+        int arabicValue = 0;
         
         if (ICount > 0)
             arabicValue += ICount;
@@ -147,5 +145,11 @@
     return highestNumeralWorth;
 }
 
+-(NSString *)convertArabicToRomanNumeral:(int)arabic
+{
+    
+    
+    return @"";
+}
 
 @end
