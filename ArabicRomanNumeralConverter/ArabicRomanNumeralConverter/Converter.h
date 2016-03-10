@@ -11,6 +11,6 @@
 @interface Converter : NSObject
 
 -(double)convertRomanNumeralToArabic:(NSString *)romanNumeral;
-
+-(int)findHighNumeralWorth:(NSString *)romanNumeral;
 
 @end

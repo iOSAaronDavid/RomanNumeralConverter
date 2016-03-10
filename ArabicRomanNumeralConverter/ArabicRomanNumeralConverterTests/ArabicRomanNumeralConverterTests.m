@@ -40,6 +40,10 @@
     XCTAssertEqual(5 , [converter convertRomanNumeralToArabic:@"V"]);
     XCTAssertEqual(10, [converter convertRomanNumeralToArabic:@"X"]);
     XCTAssertEqual(50, [converter convertRomanNumeralToArabic:@"L"]);
+    
+    //XCTAssertEqual(34, [converter convertRomanNumeralToArabic:@"XXXIV"]);
+    
+    XCTAssertEqual(10, [converter findHighNumeralWorth:@"XXXIV"]);
 }
 
 -(void)testConvertArabicToRomanNumeral:(Converter *)converter
