@@ -83,6 +83,12 @@
     XCTAssertEqualObjects(@"CM", [converter convertArabicToRomanNumeral:900]);
     
     XCTAssertEqualObjects(@"MDCXL", [converter convertArabicToRomanNumeral:1640]);
+    XCTAssertEqualObjects(@"MMDVII", [converter convertArabicToRomanNumeral:2507]);
+    XCTAssertEqualObjects(@"CCCXXIII", [converter convertArabicToRomanNumeral:323]);
+    XCTAssertEqualObjects(@"CMXCIV", [converter convertArabicToRomanNumeral:994]);
+    XCTAssertEqualObjects(@"CDVII", [converter convertArabicToRomanNumeral:407]);
+    XCTAssertEqualObjects(@"LIX", [converter convertArabicToRomanNumeral:59]);
+
 }
 
 
