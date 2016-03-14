@@ -191,7 +191,17 @@
         arabic -= 50;
         arabicString = [NSString stringWithFormat:@"%i", arabic];
     }
-
+    if (arabic >= 10)
+    {
+        NSString *xString = [arabicString substringWithRange:NSMakeRange(arabicString.length - 2, 1)];
+        
+        for (int i = 0; i < [xString intValue]; i++)
+        {
+            [romanNumeral appendString:@"X"];
+            arabic -= 10;
+            arabicString = [NSString stringWithFormat:@"%i", arabic];
+        }
+    }
     
     
     
