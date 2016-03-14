@@ -61,17 +61,28 @@
 -(void)testConvertArabicToRomanNumeral:(Converter *)converter
 {
     XCTAssertEqualObjects(@"M", [converter convertArabicToRomanNumeral:1000]);
+    XCTAssertEqualObjects(@"CM", [converter convertArabicToRomanNumeral:900]);
     XCTAssertEqualObjects(@"D", [converter convertArabicToRomanNumeral:500]);
     XCTAssertEqualObjects(@"C", [converter convertArabicToRomanNumeral:100]);
+    XCTAssertEqualObjects(@"XC", [converter convertArabicToRomanNumeral:90]);
     XCTAssertEqualObjects(@"L", [converter convertArabicToRomanNumeral:50]);
+    XCTAssertEqualObjects(@"XL", [converter convertArabicToRomanNumeral:40]);
     XCTAssertEqualObjects(@"X", [converter convertArabicToRomanNumeral:10]);
+    XCTAssertEqualObjects(@"IX", [converter convertArabicToRomanNumeral:9]);
     XCTAssertEqualObjects(@"V", [converter convertArabicToRomanNumeral:5]);
+    XCTAssertEqualObjects(@"IV", [converter convertArabicToRomanNumeral:4]);
+    XCTAssertEqualObjects(@"I", [converter convertArabicToRomanNumeral:1]);
     XCTAssertEqualObjects(@"MD", [converter convertArabicToRomanNumeral:1500]);
     XCTAssertEqualObjects(@"MDC", [converter convertArabicToRomanNumeral:1600]);
     XCTAssertEqualObjects(@"MDCL", [converter convertArabicToRomanNumeral:1650]);
     XCTAssertEqualObjects(@"MDCLX", [converter convertArabicToRomanNumeral:1660]);
     XCTAssertEqualObjects(@"MDCLXVI", [converter convertArabicToRomanNumeral:1666]);
     
+    XCTAssertEqualObjects(@"XC", [converter convertArabicToRomanNumeral:90]);
+    XCTAssertEqualObjects(@"CD", [converter convertArabicToRomanNumeral:400]);
+    XCTAssertEqualObjects(@"CM", [converter convertArabicToRomanNumeral:900]);
+    
+    XCTAssertEqualObjects(@"MDCXL", [converter convertArabicToRomanNumeral:1640]);
 }
 
 

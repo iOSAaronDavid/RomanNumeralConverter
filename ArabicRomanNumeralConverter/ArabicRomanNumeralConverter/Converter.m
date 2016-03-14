@@ -163,6 +163,13 @@
             arabicString = [NSString stringWithFormat:@"%i", arabic];
         }
     }
+    else if (arabic >= 900)
+    {
+        [romanNumeral appendString:@"CM"];
+        arabic -= 900;
+        arabicString = [NSString stringWithFormat:@"%i", arabic];
+    }
+    
     if (arabic >= 500)
     {
         NSString *dString = [arabicString substringWithRange:NSMakeRange(arabicString.length - 3, 1)];
@@ -174,6 +181,13 @@
             arabicString = [NSString stringWithFormat:@"%i", arabic];
         }
     }
+    else if (arabic >= 400)
+    {
+        [romanNumeral appendString:@"CD"];
+        arabic -= 400;
+        arabicString = [NSString stringWithFormat:@"%i", arabic];
+    }
+    
     if (arabic >= 100)
     {
         NSString *cString = [arabicString substringWithRange:NSMakeRange(arabicString.length - 3, 1)];
@@ -185,12 +199,26 @@
             arabicString = [NSString stringWithFormat:@"%i", arabic];
         }
     }
+    else if (arabic >= 90)
+    {
+        [romanNumeral appendString:@"XC"];
+        arabic -= 90;
+        arabicString = [NSString stringWithFormat:@"%i", arabic];
+    }
+    
     if (arabic >= 50)
     {
         [romanNumeral appendString:@"L"];
         arabic -= 50;
         arabicString = [NSString stringWithFormat:@"%i", arabic];
     }
+    else if (arabic >= 40)
+    {
+        [romanNumeral appendString:@"XL"];
+        arabic -= 40;
+        arabicString = [NSString stringWithFormat:@"%i", arabic];
+    }
+    
     if (arabic >= 10)
     {
         NSString *xString = [arabicString substringWithRange:NSMakeRange(arabicString.length - 2, 1)];
@@ -202,12 +230,26 @@
             arabicString = [NSString stringWithFormat:@"%i", arabic];
         }
     }
+    else if (arabic == 9)
+    {
+        [romanNumeral appendString:@"IX"];
+        arabic -= 9;
+        arabicString = [NSString stringWithFormat:@"%i", arabic];
+    }
+    
     if (arabic >= 5)
     {
         [romanNumeral appendString:@"V"];
         arabic -= 5;
         arabicString = [NSString stringWithFormat:@"%i", arabic];
     }
+    else if (arabic == 4)
+    {
+        [romanNumeral appendString:@"IV"];
+        arabic -= 4;
+        arabicString = [NSString stringWithFormat:@"%i", arabic];
+    }
+    
     if (arabic > 0)
     {
         NSString *iString = [arabicString substringWithRange:NSMakeRange(arabicString.length - 1, 1)];
