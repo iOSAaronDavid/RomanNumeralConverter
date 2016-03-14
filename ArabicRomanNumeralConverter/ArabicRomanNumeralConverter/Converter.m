@@ -165,9 +165,9 @@
     }
     if (arabic >= 500)
     {
-        NSString *lString = [arabicString substringWithRange:NSMakeRange(arabicString.length - 3, 1)];
+        NSString *dString = [arabicString substringWithRange:NSMakeRange(arabicString.length - 3, 1)];
     
-        if ([lString intValue] >= 5)
+        if ([dString intValue] >= 5)
         {
             [romanNumeral appendString:@"D"];
             arabic -= 500;
@@ -185,6 +185,13 @@
             arabicString = [NSString stringWithFormat:@"%i", arabic];
         }
     }
+    if (arabic >= 50)
+    {
+        [romanNumeral appendString:@"L"];
+        arabic -= 50;
+        arabicString = [NSString stringWithFormat:@"%i", arabic];
+    }
+
     
     
     
