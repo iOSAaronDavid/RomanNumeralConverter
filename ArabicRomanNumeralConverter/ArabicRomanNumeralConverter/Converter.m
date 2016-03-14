@@ -159,11 +159,18 @@
         for (int i = 0; i < [mString intValue]; i++)
         {
             [romanNumeral appendString:@"M"];
+            arabic -= 1000;
         }
     }
-    else if (arabic >= 500)
+    if (arabic >= 500)
     {
-        
+        NSString *lString = [arabicString substringWithRange:NSMakeRange(arabicString.length - 3, 1)];
+    
+        if ([lString intValue] >= 5)
+        {
+            [romanNumeral appendString:@"L"];
+            arabic -= 500;
+        }
     }
     
     
