@@ -62,8 +62,9 @@
 {
     XCTAssertEqualObjects(@"M", [converter convertArabicToRomanNumeral:1000]);
     XCTAssertEqualObjects(@"L", [converter convertArabicToRomanNumeral:500]);
+    XCTAssertEqualObjects(@"C", [converter convertArabicToRomanNumeral:100]);
     XCTAssertEqualObjects(@"ML", [converter convertArabicToRomanNumeral:1500]);
-    
+    XCTAssertEqualObjects(@"MLC", [converter convertArabicToRomanNumeral:1600]);
     
 }
 

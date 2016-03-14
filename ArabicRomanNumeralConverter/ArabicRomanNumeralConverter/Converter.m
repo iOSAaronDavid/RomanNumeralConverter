@@ -160,6 +160,7 @@
         {
             [romanNumeral appendString:@"M"];
             arabic -= 1000;
+            arabicString = [NSString stringWithFormat:@"%i", arabic];
         }
     }
     if (arabic >= 500)
@@ -170,6 +171,18 @@
         {
             [romanNumeral appendString:@"L"];
             arabic -= 500;
+            arabicString = [NSString stringWithFormat:@"%i", arabic];
+        }
+    }
+    if (arabic >= 100)
+    {
+        NSString *cString = [arabicString substringWithRange:NSMakeRange(arabicString.length - 3, 1)];
+        
+        for (int i = 0; i < [cString intValue]; i++)
+        {
+            [romanNumeral appendString:@"C"];
+            arabic -= 100;
+            arabicString = [NSString stringWithFormat:@"%i", arabic];
         }
     }
     
