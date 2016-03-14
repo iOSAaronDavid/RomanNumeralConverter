@@ -169,7 +169,7 @@
     
         if ([lString intValue] >= 5)
         {
-            [romanNumeral appendString:@"L"];
+            [romanNumeral appendString:@"D"];
             arabic -= 500;
             arabicString = [NSString stringWithFormat:@"%i", arabic];
         }
@@ -185,7 +185,6 @@
             arabicString = [NSString stringWithFormat:@"%i", arabic];
         }
     }
-    
     
     
     
