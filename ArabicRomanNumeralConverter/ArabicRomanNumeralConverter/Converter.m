@@ -202,7 +202,23 @@
             arabicString = [NSString stringWithFormat:@"%i", arabic];
         }
     }
-    
+    if (arabic >= 5)
+    {
+        [romanNumeral appendString:@"V"];
+        arabic -= 5;
+        arabicString = [NSString stringWithFormat:@"%i", arabic];
+    }
+    if (arabic > 0)
+    {
+        NSString *iString = [arabicString substringWithRange:NSMakeRange(arabicString.length - 1, 1)];
+        
+        for (int i = 0; i < [iString intValue]; i++)
+        {
+            [romanNumeral appendString:@"I"];
+            arabic -= 1;
+            arabicString = [NSString stringWithFormat:@"%i", arabic];
+        }
+    }
     
     
     
