@@ -61,7 +61,6 @@
 -(void)testConvertArabicToRomanNumeral:(Converter *)converter
 {
     XCTAssertEqualObjects(@"M", [converter convertArabicToRomanNumeral:1000]);
-    
 }
 
 

@@ -149,18 +149,20 @@
 {
     NSMutableString *romanNumeral = [[NSMutableString alloc] init];
     
-    int MCount = 0;
+    NSString *arabicString = [NSString stringWithFormat:@"%i", arabic];
+    
+    int mCount = 0;
     
     if (arabic >= 1000)
     {
-        MCount = arabic / 1000;
+        NSString *mString = [arabicString substringToIndex:arabicString.length - 3];
+        mCount  = [mString intValue];
     }
     
     
-    for (int i = 0; i < MCount; i++)
-    {
-        [romanNumeral appendString:@"M"];
-    }
+    
+    
+    
     
     return romanNumeral;
 }
