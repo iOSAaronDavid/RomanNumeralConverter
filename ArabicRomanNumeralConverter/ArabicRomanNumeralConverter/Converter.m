@@ -151,14 +151,20 @@
     
     NSString *arabicString = [NSString stringWithFormat:@"%i", arabic];
     
-    int mCount = 0;
     
     if (arabic >= 1000)
     {
         NSString *mString = [arabicString substringToIndex:arabicString.length - 3];
-        mCount  = [mString intValue];
+        
+        for (int i = 0; i < [mString intValue]; i++)
+        {
+            [romanNumeral appendString:@"M"];
+        }
     }
-    
+    else if (arabic >= 500)
+    {
+        
+    }
     
     
     
