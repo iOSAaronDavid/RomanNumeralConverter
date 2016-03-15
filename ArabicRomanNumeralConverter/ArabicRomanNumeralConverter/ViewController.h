@@ -16,6 +16,11 @@
 @property (strong, nonatomic) IBOutlet UILabel *arabicLabel;
 @property (strong, nonatomic) IBOutlet UITextField *symbolTextField;
 @property (strong, nonatomic) IBOutlet UIButton *convertButton;
+@property (strong, nonatomic) IBOutlet UILabel *errorLabel;
+@property (strong, nonatomic) NSArray *validNumerals;
 
+-(BOOL)labelTextIsNumeric;
+-(double)convertRomanNumeralToArabic;
+-(BOOL)inputIsValidNumeral;
 @end
 

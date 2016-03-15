@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "Converter.h"
+#import "ViewController.h"
 
 @interface ArabicRomanNumeralConverterTests : XCTestCase
 
@@ -91,7 +92,28 @@
 
 }
 
-
+-(void)testViewController
+{
+    ViewController *vc = [[ViewController alloc] init];
+    vc.symbolTextField = [[UITextField alloc] init];
+    vc.validNumerals = [[NSArray alloc] initWithObjects:@"I", @"V", @"X", @"L", @"C", @"M", nil];
+    vc.errorLabel.text = @"";
+    
+    vc.symbolTextField.text = @"343";
+    XCTAssertEqual(YES, [vc labelTextIsNumeric]);
+    vc.symbolTextField.text = @"dsf";
+    XCTAssertEqual(NO, [vc labelTextIsNumeric]);
+    vc.symbolTextField.text = @"VI";
+    XCTAssertEqual(NO, [vc labelTextIsNumeric]);
+    vc.symbolTextField.text = @"343fdf";
+    XCTAssertEqual(NO, [vc labelTextIsNumeric]);
+    
+    vc.symbolTextField.text = @"VII";
+    XCTAssertEqual(YES, [vc inputIsValidNumeral]);
+    vc.symbolTextField.text = @"DF";
+    XCTAssertEqual(NO, [vc inputIsValidNumeral]);
+    
+}
 
 
 - (void)testPerformanceExample {
