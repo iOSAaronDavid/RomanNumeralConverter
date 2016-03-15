@@ -20,7 +20,7 @@
 @property (strong, nonatomic) NSArray *validNumerals;
 
 -(BOOL)labelTextIsNumeric;
--(double)convertRomanNumeralToArabic;
+-(int)convertRomanNumeralToArabic;
 -(BOOL)inputIsValidNumeral;
 @end
 

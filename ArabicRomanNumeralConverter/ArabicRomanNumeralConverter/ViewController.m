@@ -14,19 +14,12 @@
 
 @implementation ViewController
 
-static int newInt(NSString *somestring)
-{
-    return [somestring intValue];
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.validNumerals = [[NSArray alloc] initWithObjects:@"I", @"V", @"X", @"L", @"C", @"M", nil];
     self.errorLabel.text = @"";
 }
-
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -38,12 +31,14 @@ static int newInt(NSString *somestring)
     if ([self inputIsValidNumeral])
     {
         self.errorLabel.text = @"";
-        [self convertRomanNumeralToArabic];
+        self.arabicLabel.text = [NSString stringWithFormat:@"%i", [self convertRomanNumeralToArabic]];
+        self.romanNumeralLabel.text = self.symbolTextField.text;
     }
     else if ([self labelTextIsNumeric])
     {
-        [self convertArabicToRomanNumeral];
         self.errorLabel.text = @"";
+        self.romanNumeralLabel.text = [self convertArabicToRomanNumeral];
+        self.arabicLabel.text = self.symbolTextField.text;
     }
     else
         self.errorLabel.text = @"Invalid input";
@@ -60,11 +55,10 @@ static int newInt(NSString *somestring)
     return NO;
 }
 
--(double)convertRomanNumeralToArabic
+-(int)convertRomanNumeralToArabic
 {
     Converter *converter = [[Converter alloc] init];
-    
-    return 0;
+    return [converter convertRomanNumeralToArabic:self.symbolTextField.text];
 }
 
 -(BOOL)inputIsValidNumeral
@@ -78,7 +72,6 @@ static int newInt(NSString *somestring)
         for (int x = 0; x < self.validNumerals.count; x++)
         {
             NSString *validNumeral = self.validNumerals[x];
-            NSString *test = [self.symbolTextField.text substringWithRange:NSMakeRange(i, 1)];
             if ([[self.symbolTextField.text substringWithRange:NSMakeRange(i, 1)] isEqualToString:validNumeral])
             {
                 isValidNumeral = YES;
@@ -95,10 +88,10 @@ static int newInt(NSString *somestring)
     return valid;
 }
 
--(id)convertArabicToRomanNumeral
+-(NSString *)convertArabicToRomanNumeral
 {
-    
-    return self;
+    Converter *converter = [[Converter alloc] init];
+    return [converter convertArabicToRomanNumeral:[self.symbolTextField.text intValue]];
 }
 
 @end
