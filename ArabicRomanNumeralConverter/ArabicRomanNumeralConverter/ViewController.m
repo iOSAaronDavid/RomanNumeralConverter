@@ -69,18 +69,27 @@ static int newInt(NSString *somestring)
 
 -(BOOL)inputIsValidNumeral
 {
-    BOOL valid = NO;
+    BOOL valid = YES;
     
     for (int i = 0; i < self.symbolTextField.text.length; i++)
     {
+        bool isValidNumeral = false;
+        
         for (int x = 0; x < self.validNumerals.count; x++)
         {
             NSString *validNumeral = self.validNumerals[x];
             NSString *test = [self.symbolTextField.text substringWithRange:NSMakeRange(i, 1)];
             if ([[self.symbolTextField.text substringWithRange:NSMakeRange(i, 1)] isEqualToString:validNumeral])
             {
-                return YES;
+                isValidNumeral = YES;
+                break;
             }
+        }
+        
+        if (!isValidNumeral)
+        {
+            valid = NO;
+            break;
         }
     }
     return valid;

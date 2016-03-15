@@ -112,7 +112,12 @@
     XCTAssertEqual(YES, [vc inputIsValidNumeral]);
     vc.symbolTextField.text = @"DF";
     XCTAssertEqual(NO, [vc inputIsValidNumeral]);
-    
+    vc.symbolTextField.text = @"VIIfd";
+    XCTAssertEqual(NO, [vc inputIsValidNumeral]);
+    vc.symbolTextField.text = @"43";
+    XCTAssertEqual(NO, [vc inputIsValidNumeral]);
+    vc.symbolTextField.text = @"43fd";
+    XCTAssertEqual(NO, [vc inputIsValidNumeral]);
 }
 
 
